@@ -1,6 +1,6 @@
 const sum = (...args) => {
   return args.reduce((acc, currentValue) => {
-    if(typeof currentValue !== 'number' || acc === 'Error: cannot add values different than numbers') {
+    if (typeof currentValue !== 'number' || acc === 'Error: cannot add values different than numbers') {
       return 'Error: cannot add values different than numbers'
     } else {
       return acc + currentValue
@@ -9,7 +9,7 @@ const sum = (...args) => {
 }
 const substract = (...args) => {
   return args.reduce((acc, currentValue, index) => {
-    if(typeof currentValue !== 'number' || acc === 'Error: cannot add values different than numbers') {
+    if (typeof currentValue !== 'number' || acc === 'Error: cannot add values different than numbers') {
       return 'Error: cannot add values different than numbers'
     } else {
       if (index === 0) return currentValue
@@ -19,7 +19,7 @@ const substract = (...args) => {
 }
 const multiply = (...args) => {
   return args.reduce((acc, currentValue, index) => {
-    if(typeof currentValue !== 'number' || acc === 'Error: cannot add values different than numbers') {
+    if (typeof currentValue !== 'number' || acc === 'Error: cannot add values different than numbers') {
       return 'Error: cannot add values different than numbers'
     } else {
       if (index === 0) return currentValue
@@ -30,7 +30,7 @@ const multiply = (...args) => {
 
 const divide = (...args) => {
   return args.reduce((acc, currentValue, index) => {
-    if(typeof currentValue !== 'number' || acc === 'Error: cannot add values different than numbers') {
+    if (typeof currentValue !== 'number' || acc === 'Error: cannot add values different than numbers') {
       return 'Error: cannot add values different than numbers'
     } else {
       if (index === 0) return currentValue
