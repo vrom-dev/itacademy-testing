@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1632998602905" clover="3.2.0">
+  <project timestamp="1632998602906" name="All files">
+    <metrics statements="62" coveredstatements="62" conditionals="53" coveredconditionals="48" methods="26" coveredmethods="26" elements="141" coveredelements="136" complexity="0" loc="62" ncloc="62" packages="1" files="3" classes="3"/>
+    <file name="async-await.js" path="/home/vrom/itacademy/testing/app/nivell1/async-await.js">
+      <metrics statements="25" coveredstatements="25" conditionals="13" coveredconditionals="12" methods="12" coveredmethods="12"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="7" type="stmt"/>
+      <line num="8" count="3" type="stmt"/>
+      <line num="9" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="14" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="15" count="2" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="24" count="3" type="stmt"/>
+      <line num="25" count="3" type="stmt"/>
+      <line num="26" count="3" type="cond" truecount="5" falsecount="0"/>
+      <line num="27" count="2" type="stmt"/>
+      <line num="28" count="2" type="stmt"/>
+      <line num="29" count="2" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="33" count="1" type="stmt"/>
+      <line num="39" count="1" type="stmt"/>
+      <line num="40" count="3" type="stmt"/>
+      <line num="41" count="1" type="stmt"/>
+      <line num="42" count="2" type="stmt"/>
+      <line num="45" count="1" type="stmt"/>
+    </file>
+    <file name="calculator.js" path="/home/vrom/itacademy/testing/app/nivell1/calculator.js">
+      <metrics statements="24" coveredstatements="24" conditionals="22" coveredconditionals="19" methods="8" coveredmethods="8"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="3" type="stmt"/>
+      <line num="3" count="10" type="cond" truecount="4" falsecount="0"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="6" count="9" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="3" type="stmt"/>
+      <line num="12" count="7" type="cond" truecount="4" falsecount="0"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="15" count="6" type="cond" truecount="1" falsecount="1"/>
+      <line num="16" count="6" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="21" count="4" type="stmt"/>
+      <line num="22" count="8" type="cond" truecount="4" falsecount="0"/>
+      <line num="23" count="2" type="stmt"/>
+      <line num="25" count="6" type="cond" truecount="1" falsecount="1"/>
+      <line num="26" count="6" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
+      <line num="32" count="3" type="stmt"/>
+      <line num="33" count="6" type="cond" truecount="4" falsecount="0"/>
+      <line num="34" count="1" type="stmt"/>
+      <line num="36" count="5" type="cond" truecount="1" falsecount="1"/>
+      <line num="37" count="5" type="stmt"/>
+      <line num="42" count="1" type="stmt"/>
+    </file>
+    <file name="promises-callbacks.js" path="/home/vrom/itacademy/testing/app/nivell1/promises-callbacks.js">
+      <metrics statements="13" coveredstatements="13" conditionals="18" coveredconditionals="17" methods="6" coveredmethods="6"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="7" type="cond" truecount="4" falsecount="0"/>
+      <line num="5" count="5" type="cond" truecount="1" falsecount="1"/>
+      <line num="6" count="9" type="stmt"/>
+      <line num="7" count="5" type="stmt"/>
+      <line num="8" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="5" type="cond" truecount="4" falsecount="0"/>
+      <line num="14" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="16" count="7" type="stmt"/>
+      <line num="17" count="3" type="stmt"/>
+      <line num="18" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="22" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

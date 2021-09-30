@@ -1,8 +1,8 @@
-const { getEmpleado, getSalario } = require('../../app/nivell1/asyncawait')
+const { getEmpleado, getSalario, startFn } = require('../../app/nivell1/async-await')
 
 const employees = [{
   id: 1,
-  name: 'Linux Torvalds'
+  name: 'Linus Torvalds'
 }, {
   id: 2,
   name: 'Bill Gates'
@@ -64,23 +64,50 @@ describe('ASYNC AWAIT NV 1', () => {
         })
     })
     test('when no id is passed as an argument, it returns an error', () => {
-      getSalario()
-        .then(result => {
-          expect(result).toBe(salaries[1].salary)
-        })
+      getSalario(undefined, salaries)
         .catch(error => {
           expect(error).toBe('Error: Employee not specified')
         })
     })
     const id = 2
     test('when no valid salaries array is passed as an argument, it returns an error', () => {
-      getEmpleado(id, employees)
-        .then(empleado => {
-          getSalario(empleado)
-            .catch(error => {
-              expect(error).toBe('Error: Salaries array not found')
-            })
+      getSalario(id, undefined)
+        .catch(error => {
+          expect(error).toBe('Error: Salaries array not found')
         })
+    })
+  })
+})
+
+describe('ASYNC AWAIT NV 2', () => {
+  describe('sayHiAfter2s', () => {
+    const name = 'Vic'
+    test('it says hi after 2s with the provided name', () => {
+      const callback = jest.fn()
+      jest.useFakeTimers()
+      startFn(name, callback)
+      expect(callback).not.toHaveBeenCalled()
+      jest.runAllTimers()
+      expect(callback).toHaveBeenCalled()
+      expect(callback).toBeCalledWith(`Nice! ${name}`)
+    })
+    test('if an empty string is provided as a name it returns an error message', () => {
+      const callback = jest.fn()
+      jest.useFakeTimers()
+      startFn('', callback)
+      expect(callback).not.toHaveBeenCalled()
+      jest.runAllTimers()
+      expect(callback).toHaveBeenCalled()
+      expect(callback).toBeCalledWith('Error. You need to pass a string as a parameter')
+    })
+    test('if value different from string is provided as a name it returns an error message', () => {
+      const callback = jest.fn()
+      jest.useFakeTimers()
+      startFn(5, callback)
+      expect(callback).not.toHaveBeenCalled()
+      jest.runAllTimers()
+      expect(callback).toHaveBeenCalled()
+      expect(callback).toBeCalledWith('Error. You need to pass a string as a parameter')
     })
   })
 })
