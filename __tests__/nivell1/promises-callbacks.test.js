@@ -72,7 +72,7 @@ describe('PROMISES-CALLBACKS', () => {
   })
   describe('getSalary', () => {
     test('if no salaries data is provided, it returns `No salaries array provided`', () => {
-      getSalary(employees[0], [])
+      getSalary(1, [])
         .catch(error => {
           expect(error).toBe('No salaries array provided')
         })
